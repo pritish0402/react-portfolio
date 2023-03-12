@@ -1,0 +1,737 @@
+/* 
+Colour palette
+black - 222831
+dark grey - 393E46
+blue - 00ADB5
+white - EEEEEE
+
+Colour palette 2
+dark green - 658864
+light green - B7B78A
+pastel white - DDDDDD
+white - EEEEEE
+
+Colour palette 3
+black - 000000
+brownish red - 3D0000
+dark red - 950101
+red - FF0000
+
+Colour palette 4 (custom)
+black - 000000
+grey -
+brownish red - 3D0000
+dark red - 950101
+red - FF0000
+white - EEEEEE
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/* html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+  } */
+
+  * {
+    font-family: 'Open Sans', sans-serif;
+    color: #EEEEEE !important;
+}
+
+body {
+    overflow: auto;
+    background-image: -webkit-linear-gradient(-145deg, rgb(0,0,0) 0%, rgb(60,0,2) 25%, rgb(80,0,4) 60%);
+}
+
+
+/************************************************* Navigation Bar  *************************************************/
+.my-navbar {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    transition: 0.3s;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.nav-transparent {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-active {
+    background-color: #000000;
+}
+
+.brand-name {
+    font-size: 2.3rem !important;
+}
+
+.navlink {
+    font-size: 1.2rem !important;
+    margin: 0 8px;
+}
+
+.navlink:hover {
+    color: #949ca7 !important;
+}
+
+
+/************************************************* Home *************************************************/
+.gif-div-sm {
+    display: none;
+}
+
+.gif-div {
+    height: 25rem;
+    width: 25rem;
+    margin: 10rem 3rem 12rem;
+}
+
+.ar-emoji {
+    height: 30rem;
+    width: 30rem;
+}
+
+.title-div {
+    height: 16rem;
+    width: 33rem;
+    margin: 17rem 4rem 17rem auto;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.title-greet {
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+.typewriter-desc {
+    font-size: 3rem !important;
+    font-weight: 700;
+}
+
+.cursor {
+    font-size: 3.2rem !important;
+    font-weight: 500;
+}
+
+.title-intro {
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+.mui-icon {
+    height: 2rem !important;
+    width: 2rem !important;
+}
+
+.mui-link {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.mui-link:hover {
+    --box-shadow-color: rgba(0, 0, 0, 0) !important;
+}
+
+.mui-link:active {
+    background-color: rgba(0, 0, 0, 0) !important;
+    --box-shadow-color: rgba(0, 0, 0, 0) !important;
+}
+
+.contact-btn {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    border-width: 0 !important;
+    background-color: #000000  !important;
+}
+
+.contact-btn:hover {
+    background-color: #1a1919 !important;
+    --box-shadow-color: #000000 !important;
+    box-shadow: 3px 4px 0 var(--box-shadow-color);
+}
+
+.contact-btn:active {
+    background-color: #000000 !important;
+    --box-shadow-color: #000000;
+    box-shadow: 3px 4px 0 var(--box-shadow-color);
+}
+
+
+/************************************************* About *************************************************/
+#about {
+    padding: 6.2rem 0 3rem;
+}
+
+.card-container {
+    position: relative;
+}
+
+.info-card {
+    position: relative;
+    border-radius: 30px !important;
+}
+
+.black-info {
+    background-color: #000000 !important;
+}
+
+.red-info {
+    background-color: rgba(210, 0, 0, 0.1) !important;
+}
+
+.gray-info {
+    background-color: #1a1919;
+}
+
+.main-card-title h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 3.5rem;
+    font-weight: 700 !important;
+}
+
+.main-card-title {
+    margin-top: 4rem !important;
+}
+
+.main-card-title h1 span {
+    border-bottom: 5px solid #FF0000;
+}
+
+.bg-title {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+}
+
+.bg-title h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 10rem !important;
+    font-weight: 700;
+    opacity: 0.07;
+    color: #000000;
+    z-index: 1;
+}
+
+.info-subtitle strong {
+    color: #FF0000 !important;
+}
+
+.info-para span{
+    color: #FF0000 !important;
+}
+
+.info-para2 {
+    padding-top: 0;
+}
+
+.info-para2 a {
+    color: #FF0000 !important;
+    text-decoration: underline;
+}
+
+.info-para2 a:hover {
+    color: #950101 !important;
+    text-decoration: underline;
+}
+
+.info-list-item {
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+    width: 70%;
+    border-width: 0 !important;
+}
+
+.info-list-item a {
+    color: #FF0000 !important;
+    text-decoration: none;
+}
+
+.info-list-item a:hover {
+    color: #950101 !important;
+    text-decoration: none;
+}
+
+hr {
+    margin: 0 0 !important;
+    width: 70%;
+}
+
+.info-count {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.info-count-label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/************************************************* Resume *************************************************/
+#resume {
+    padding: 5.1rem 0 2rem;
+}
+
+.resume-bg-title {
+    opacity: 0.5;
+}
+
+.resume-card {
+    position: absolute;
+    background-color: #000000 !important;
+    width: 36rem;
+    border-radius: 15px !important;
+    margin: 2.5rem 0;
+}
+
+.card-year {
+    display: inline-block;
+    width: 5.9rem;
+    border-radius: 5px;
+    background-color: #950101; 
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 8px;
+}
+
+.card-degree {
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.card-place {
+    display: inline-block;
+    color: #FF0000 !important;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.card-score {
+    display: inline-block;
+    color: #949ca7 !important;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.project-card-year {
+    width: 3.3rem !important;
+}
+
+.resume-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.progress-bar {
+    background-color: #950101 !important;
+}
+
+.progress-bar.progress {
+    height: 0.75rem;
+    background-color: #000000 !important;
+}
+
+.cv-button {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 8rem !important;
+    border-color: #949ca7 !important;
+    margin: 2rem 0 3rem 0;
+}
+
+
+/************************************************* Contact *************************************************/
+#contact {
+    padding: 6.5rem 0 3rem;
+}
+
+.contact-input {
+    display: block;
+    background-color: #292626;
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-radius: 0.4rem;
+    border-width: 0;
+}
+
+.contact-card h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.contact-card button {
+    background-color: #b01818;
+    border-width: 0;
+    border-radius: 5rem;
+}
+
+.contact-card button:hover {
+    background-color: #950101;
+}
+
+.contact-card button:active {
+    background-color: #b01818 !important;
+}
+
+.contact-card-link a {
+    color: #FF0000 !important;
+    text-decoration: none;
+}
+
+.contact-card-link a:hover {
+    color: #950101 !important;
+    text-decoration: none;
+}
+
+
+/************************************************* Footer *************************************************/
+#footer {
+    width: 100%;
+    background-color: #000000;
+}
+
+
+/************************************************* Responsive Design *************************************************/
+@media (max-width: 768px) {
+    /* Navbar */
+    .my-navbar {
+        z-index: 2;
+    }
+
+    .brand-name {
+        font-size: 1.5rem !important;
+    }
+    
+    .navlink {
+        font-size: 1rem !important;
+    }
+    
+    /* Home */
+    #home {
+        padding-bottom: 0;
+    }
+
+    .gif-div-lg {
+        display: none;
+    }
+
+    .gif-div-sm {
+        display: block;
+    }
+
+    .gif-div {
+        width: 73%;
+        height: 65%;
+        margin: 7rem auto 2.5rem;
+    }
+
+    .ar-emoji {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .title-div {
+        height: 16rem;
+        width: 80%;
+        margin: 3rem auto 4rem;
+        text-align: center;
+    }
+
+    .title-greet {
+        font-size: 1rem !important;
+        font-weight: 700;
+    }
+    
+    .typewriter-desc {
+        font-size: 1.5rem !important;
+        font-weight: 700;
+    }
+    
+    .cursor {
+        font-size: 1.6rem !important;
+        font-weight: 500;
+    }
+    
+    .title-intro {
+        font-size: 1.2rem !important;
+        font-weight: 700;
+    }
+
+    .title-div h4 span {
+        font-size: 1.2rem !important;
+    }
+
+    /* About */
+    #about {
+        padding-top: 4.2rem;
+        padding-bottom: 2rem;
+    }
+
+    .my-card-title h1 {
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 1.5rem;
+        font-weight: 700 !important;
+    }
+
+    .main-card-title {
+        margin-top: 1rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: 4rem;
+    }
+
+    .main-card-title h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .bg-title {
+        display: none;
+    }
+
+    .info-subtitle {
+        text-align: left;
+        font-size: 1.7rem;
+    }
+
+    .info-outer-container.ms-3 {
+        margin-left: 0 !important;
+    }
+
+    .info-inner-container.mx-3 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .info-inner-container.mt-5 {
+        margin-top: 0 !important;
+    }
+
+    .list-info-div.mt-5 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .info-list-item {
+        width: 100%;
+        padding-left: 0 !important;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .info-count {
+        font-size: 1rem;
+    }
+
+    .info-count-label {
+        font-size: 1.2rem;
+    }
+
+    .vr {
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    /* Resume */
+    #resume {
+        padding-top: 2.7rem;
+        padding-bottom: 1rem;
+    }
+
+    .resume-card {
+        width: auto;
+    }
+
+    /* Contact */
+    #contact {
+        padding-top: 4.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .contact-info-div.mx-5 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    /* Navbar */
+    .my-navbar {
+        z-index: 2;
+    }
+
+    .brand-name {
+        font-size: 1.5rem !important;
+    }
+    
+    .navlink {
+        font-size: 1rem !important;
+    }
+    
+    /* Home */
+    #home {
+        padding-bottom: 0;
+    }
+
+    .gif-div-lg {
+        display: none;
+    }
+
+    .gif-div-sm {
+        display: block;
+    }
+
+    .gif-div {
+        width: 73%;
+        height: 65%;
+        margin: 7rem auto 2.5rem;
+    }
+
+    .ar-emoji {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .title-div {
+        height: 16rem;
+        width: 80%;
+        margin: 14rem auto 4rem;
+        text-align: center;
+    }
+
+    .title-greet {
+        font-size: 1rem !important;
+        font-weight: 700;
+    }
+    
+    .typewriter-desc {
+        font-size: 1.5rem !important;
+        font-weight: 700;
+    }
+    
+    .cursor {
+        font-size: 1.6rem !important;
+        font-weight: 500;
+    }
+    
+    
+    .title-intro {
+        font-size: 1.2rem !important;
+        font-weight: 700;
+    }
+
+    .title-div h4 span {
+        font-size: 1.2rem !important;
+    }
+
+    /* About */
+    #about {
+        padding-top: 4.2rem;
+        padding-bottom: 2rem;
+    }
+
+    .my-card-title h1 {
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 1.5rem;
+        font-weight: 700 !important;
+    }
+
+    .main-card-title {
+        margin-top: 1rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        height: 4rem;
+    }
+
+    .main-card-title h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .bg-title {
+        display: none;
+    }
+
+    .info-subtitle {
+        text-align: left;
+        font-size: 1.7rem;
+    }
+
+    .info-outer-container.ms-3 {
+        margin-left: 0 !important;
+    }
+
+    .info-inner-container.mx-3 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .info-inner-container.mt-5 {
+        margin-top: 0 !important;
+    }
+
+    .list-info-div.mt-5 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem;
+    }
+
+    .info-list-item {
+        width: 100%;
+        padding-left: 0 !important;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .info-count {
+        font-size: 1rem;
+    }
+
+    .info-count-label {
+        font-size: 1.2rem;
+    }
+
+    .vr {
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    /* Resume */
+    #resume {
+        padding-top: 2.7rem;
+        padding-bottom: 1rem;
+    }
+
+    .resume-card {
+        width: auto;
+    }
+
+    /* Contact */
+    #contact {
+        padding-top: 4.2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .contact-info-div.mx-5 {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
