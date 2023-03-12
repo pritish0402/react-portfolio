@@ -3,22 +3,23 @@ import BackgroundTitle from "../reusables/BackgroundTitle";
 import ResumeCard from "../reusables/ResumeCard";
 import DownloadIcon from '@mui/icons-material/Download';
 import SkillBar from "../reusables/SkillBar";
+import { educationCards, projectCards, skills } from "../data";
 
-function Section(props) {
+function Section() {
     return (
         <section id="resume">
-            <Container className={props.bgColor} fluid>
+            <Container className="gray-info" fluid>
                 <Container>
                     <div className="d-flex justify-content-center">
                         <div className="main-card-title">
-                            <h1>{props.title}</h1>
+                            <h1>Re<span>su</span>me</h1>
                         </div>
-                        <BackgroundTitle className="resume-bg-title">{props.bgTitle}</BackgroundTitle>
+                        <BackgroundTitle className="resume-bg-title">SUMMARY</BackgroundTitle>
                     </div>
                     <div className="row my-4">
                         <div className="col-lg-6 col-md-12">
-                            <h3 className="resume-subtitle">{props.subtitle1}</h3>
-                            {props.educationCards.map((card) => {
+                            <h3 className="resume-subtitle">My Education</h3>
+                            {educationCards.map((card) => {
                                 return (
                                     <ResumeCard
                                         key={card.id}
@@ -32,8 +33,8 @@ function Section(props) {
                             })}
                         </div>
                         <div className="col-lg-6 col-md-12">
-                            <h3 className="resume-subtitle">{props.subtitle2}</h3>
-                            {props.projectCards.map((card) => {
+                            <h3 className="resume-subtitle">My Projects</h3>
+                            {projectCards.map((card) => {
                                 return (
                                     <ResumeCard
                                         key={card.id}
@@ -48,8 +49,8 @@ function Section(props) {
                         </div>
                     </div>
                     <div className="row my-4">
-                        <h3 className="resume-subtitle">{props.subtitle3}</h3>
-                        {props.skills.map((skill) => {
+                        <h3 className="resume-subtitle">My Skills</h3>
+                        {skills.map((skill) => {
                             return (
                                 <SkillBar key={skill.id} name={skill.name} progress={skill.progress} />
                             );

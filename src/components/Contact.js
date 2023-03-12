@@ -4,6 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useState } from "react";
+import { contact } from "../data";
 
 function Contact(props) {
     const [userDetails, setUserDetails] = useState({
@@ -25,13 +26,13 @@ function Contact(props) {
     }
 
     return (
-        <InfoCard id="contact" className="contact-card" bgColor="black-info" title={props.title} bgTitle={props.bgTitle}>
+        <InfoCard id="contact" className="contact-card" bgColor="black-info" title={<p>Get <span>in To</span>uch</p>} bgTitle="CONTACT">
             <div className="row my-5 mx-5 contact-info-div">
                 <div className="col-md-4">
                     <div className="row">
                         <h3>Contact Details</h3>
-                        <p className="pt-2"><span>Phone Number: </span>{props.phone}</p>
-                        <p className="contact-card-link"><span>Email ID: </span><a href={"mailto:" + props.email}>{props.email}</a></p>
+                        <p className="pt-2"><span>Phone Number: </span>{contact.phone}</p>
+                        <p className="contact-card-link"><span>Email ID: </span><a href={"mailto:" + contact.email}>{contact.email}</a></p>
                     </div>
                     <div className="row my-4">
                         <h3>Follow Me</h3>
